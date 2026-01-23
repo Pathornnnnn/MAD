@@ -1,0 +1,32 @@
+############################
+# STM32CubeIDE / Eclipse
+############################
+.metadata/
+.settings/
+*.launch
+
+############################
+# Build output
+############################
+Debug/
+Release/
+build/
+*.elf
+*.bin
+*.hex
+*.map
+*.o
+*.obj
+*.su
+*.d
+
+############################
+# CubeMX / CubeIDE temp
+############################
+.mxproject
+
+############################
+# OS junk
+############################
+.DS_Store
+Thumbs.db
