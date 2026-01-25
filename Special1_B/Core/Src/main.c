@@ -367,7 +367,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 	// --- ส่วนของ UART3 (รับจากคีย์บอร์ดเรา) ---
 	if (huart->Instance == USART3)
 	{
-		if (rx3 == 'q' && rx_index3 == 0 && currentState == Wait_Name)
+		if (rx3 == 'q' && rx_index3 == 0 )
 		{
 			HAL_UART_Transmit(&huart3, (uint8_t*)"\r\nQuit Program.\r\n", 15, 100);
 			HAL_UART_Transmit(&huart2, (uint8_t*)"~", 1, 100);
