@@ -60,8 +60,13 @@ all: main-build
 main-build: Lab3.elf secondary-outputs
 
 # Tool invocations
+<<<<<<< HEAD
 Lab3.elf Lab3.map: $(OBJS) $(USER_OBJS) C:\MAD\Lab3\STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	arm-none-eabi-gcc -o "Lab3.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\MAD\Lab3\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+=======
+Lab3.elf Lab3.map: $(OBJS) $(USER_OBJS) /Users/pathorn/STM32CubeIDE/MAD_Lab/Lab3/STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Lab3.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/Users/pathorn/STM32CubeIDE/MAD_Lab/Lab3/STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lab3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+>>>>>>> d06b0b5 (feat: add lab1,3,4,5)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

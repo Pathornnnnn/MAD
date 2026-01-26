@@ -22,7 +22,11 @@
 ******************************************************************************
 ** @attention
 **
+<<<<<<< HEAD
 ** Copyright (c) 2568 STMicroelectronics.
+=======
+** Copyright (c) 2025 STMicroelectronics.
+>>>>>>> d06b0b5 (feat: add lab1,3,4,5)
 ** All rights reserved.
 **
 ** This software is licensed under terms that can be found in the LICENSE file
