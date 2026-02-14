@@ -60,8 +60,8 @@ all: main-build
 main-build: Special1_B.elf secondary-outputs
 
 # Tool invocations
-Special1_B.elf Special1_B.map: $(OBJS) $(USER_OBJS) /Users/pathorn/STM32CubeIDE/MAD_Lab/Special1_B/STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Special1_B.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"/Users/pathorn/STM32CubeIDE/MAD_Lab/Special1_B/STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Special1_B.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Special1_B.elf Special1_B.map: $(OBJS) $(USER_OBJS) C:\MAD\Special1_B\STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Special1_B.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\MAD\Special1_B\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Special1_B.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
